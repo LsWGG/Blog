@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>黄金屋</title>
+    <!-- 网页图标 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
+    <script type="text/javascript"> L2Dwidget.init(); </script>
+
+</head>
+<style>
+    /* 看板娘 */
+    canvas#live2dcanvas {
+        border: 0 !important;
+        left: 1;
+    }
+
+    * {
+        background: blanchedalmond;
+        font-size: 17px;
+        font-family: "楷体";
+    }
+
+    a {
+        text-decoration: none;
+        color: coral;
+    }
+
+    li {
+        color: coral;
+    }
+
+    h1 {
+        color: rgb(245, 99, 46);
+    }
+
+    #main {
+        width: 1350px;
+    }
+
+    #left {
+        width: 20%;
+        float: left;
+        margin-right: 8px;
+    }
+
+    #center {
+        width: 20%;
+        float: left;
+        margin-right: 8px;
+    }
+
+    #right {
+        width: 20%;
+        float: left;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <div id="left">
+            <ol>
+                <h1>讲义</h1>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E8%B5%84%E6%96%99/index.html">数据结构与算法</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/Python%E5%9F%BA%E7%A1%80%E8%AE%B2%E4%B9%89/Python%E5%9F%BA%E7%A1%80%E8%AE%B2%E4%B9%89/index.html">Python基础讲义</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/python-web%E5%9F%BA%E7%A1%80(5.1.2%E7%89%88%E6%9C%AC)/index.html">python-web基础(5.1.2版本)</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/git%E8%AE%B2%E4%B9%89/index.html">git讲义</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/redis%E8%AE%B2%E4%B9%89/redis%E8%AE%B2%E4%B9%89/index.html">redis讲义</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/Django%E6%A1%86%E6%9E%B6/Django%E6%A1%86%E6%9E%B6/index.html">Django框架</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%BE%8E%E5%A4%9A%E5%95%86%E5%9F%8E%E8%AE%B2%E4%B9%89/index.html">美多商城讲义</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/DjangoRESTframework%E8%AE%B2%E4%B9%89/index.html">DjangoRESTframework讲义</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/Vue%E7%BB%84%E4%BB%B6%E8%AE%B2%E4%B9%89/index.html">Vue组件讲义</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/vue%E8%AE%B2%E4%B9%89/vue%E8%AE%B2%E4%B9%89/index.html">vue讲义</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%BE%8E%E5%A4%9A%E5%95%86%E5%9F%8E%E5%90%8E%E5%8F%B0%E8%AE%B2%E4%B9%89/index.html">美多商城后台讲义</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/index.html">项目部署</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/Flask%E8%AF%BE%E4%BB%B6/index.html">Flask课件</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E9%BB%91%E9%A9%AC%E5%A4%B4%E6%9D%A1%E9%A1%B9%E7%9B%AE%E8%AF%BE%E4%BB%B6/index.html">黑马头条项目</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93%EF%BC%89/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E5%BA%93%EF%BC%89/index.html">机器学习（科学计算库）</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E7%AE%97%E6%B3%95%E7%AF%87%EF%BC%89/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E7%AE%97%E6%B3%95%E7%AF%87%EF%BC%89/index.html">机器学习（算法篇）</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%96%B0%E7%89%88%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E4%BC%A0%E7%BB%9F8%E5%A4%A9%E8%AE%B2%E4%B9%89/index.html">推荐系统（新版）</a>
+                    </p>
+                </li>
+                <li>
+                    <p><a
+                            href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E9%BB%91%E9%A9%AC%E5%A4%B4%E6%9D%A1%E6%8E%A8%E8%8D%90%E8%AF%BE%E4%BB%B6V1.0/index.html">黑马头条推荐课件V1.0</a>
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div id="center">
+            <ol>
+                <h1>测试</h1>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80%E8%AF%BE%E4%BB%B6/index.html">测试基础</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%89%8B%E5%B7%A5%E6%B5%8B%E8%AF%95%E8%AF%BE%E4%BB%B6/index.html">手工测试</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E8%AF%BE%E4%BB%B6/index.html">Web自动化测试</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/index.html">接口测试</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/index.html">性能测试</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%A7%BB%E5%8A%A8%E6%B5%8B%E8%AF%95/index.html">移动测试</a></p>
+                </li>
+            </ol>
+        </div>
+
+        <div id="center">
+            <ol>
+                <h1>笔记</h1>
+
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4.html"
+                            id="biji">Linux基础命令</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/vscode%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5.html"
+                            id="biji">vscode远程连接</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day1.html"
+                            id="biji">Flask框架</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day2.html"
+                            id="biji">返回响应、异常、钩子、上下文</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day3.html"
+                            id="biji">Flask-restful扩展</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day4.html"
+                            id="biji">数据库设计、ORM</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day5.html"
+                            id="biji">查询、优化、redis事务和持久化</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day6.html"
+                            id="biji">gitflow工作流、JWT认证方案</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day7.html"
+                            id="biji">七牛云、缓存</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day8.html"
+                            id="biji">持久存储、定时任务、RPC</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day9.html"
+                            id="biji">RPC、即时通信</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0day10.html"
+                            id="biji">ES、单元测试</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E7%AC%94%E8%AE%B0.html"
+                            id="biji">机器学习</a></p>
+                </li>
+                <ul>
+                    <li>
+                        <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E6%80%BB%E7%BB%93.html"
+                                id="biji">总结</a></p>
+                    </li>
+                </ul>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/Matplotlib%E3%80%81Numpy%E3%80%81Pandas.html"
+                            id="biji">Matplotlib、Numpy、Pandas</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/Pandas%E7%BB%9F%E8%AE%A1%E3%80%81%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8.html"
+                            id="biji">Pandas统计、高级应用</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95.html"
+                            id="biji">近邻算法</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E7%AC%AC%E4%BA%94%E5%A4%A9%E7%AC%94%E8%AE%B0.html"
+                            id="biji">交叉验证、线性回归</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E7%AC%AC%E5%85%AD%E5%A4%A9%E7%AC%94%E8%AE%B0.html"
+                            id="biji">逻辑回归、决策树</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E7%AC%AC%E4%B8%83%E5%A4%A9.html"
+                            id="biji">集成学习、聚类算法</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E7%AC%AC%E5%85%AB%E5%A4%A9%E7%AC%94%E8%AE%B0.html"
+                            id="biji">相关系数</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E7%AC%94%E8%AE%B0/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E6%80%BB%EF%BC%89.html"
+                            id="biji">机器学习（总）</a></p>
+                </li>
+            </ol>
+        </div>
+
+        <div id="right">
+            <ol>
+                <h1>思维导图</h1>
+
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/git.jpg"
+                            id="daotu">Git</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/redis.jpg"
+                            id="daotu">redis</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/django.jpg"
+                            id="daotu">Django</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/%E7%BE%8E%E5%A4%9A%E5%95%86%E5%9F%8E.jpg"
+                            id="daotu">美多商城</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/DRF%E6%A1%86%E6%9E%B6.jpg"
+                            id="daotu">DRF框架</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/%E5%9B%9E%E9%A1%BE.jpg"
+                            id="daotu">回顾(Django和DRF) </a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/docker.jpg"
+                            id="daotu">Docker</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%89%8D%E4%B8%89%E5%A4%A9.png"
+                            id="daotu">机器学习前三天</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92.jpg"
+                            id="daotu">线性回归</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/%E7%AE%97%E6%B3%95.jpg"
+                            id="daotu">逻辑回归、决策树</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E7%AE%97%E6%B3%95%E7%AF%87%EF%BC%89.jpg"
+                            id="daotu">机器学习（算法篇）</a></p>
+                </li>
+                <li>
+                    <p><a href="https://handout-1300728887.cos.ap-beijing.myqcloud.com/%E8%AE%B2%E4%B9%89/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/Django%E4%BF%A1%E5%8F%B7.jpg"
+                            id="daotu">Django信号</a></p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
